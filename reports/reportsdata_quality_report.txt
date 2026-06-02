@@ -1,0 +1,35 @@
+DATA QUALITY REPORT
+
+Date: 2/6/2026
+
+1. Data Ingestion
+
+* All 10 datasets loaded successfully using Pandas.
+* Dataset shapes, data types, and sample records were verified.
+
+2. Fund Master Exploration
+
+* Unique fund houses identified.
+* Categories, sub-categories, and risk categories explored successfully.
+
+3. Live NAV Data
+
+* Live NAV data fetched successfully from mfapi.in.
+* NAV data saved for:
+
+  * HDFC Top 100 Direct
+  * SBI Bluechip
+  * ICICI Bluechip
+  * Nippon Large Cap
+  * Axis Bluechip
+  * Kotak Bluechip
+
+4. AMFI Code Validation
+
+* Missing Codes: 0
+* All AMFI codes in fund_master are present in nav_history.
+
+5. Conclusion
+
+* Data ingestion completed successfully.
+* No major data quality issues found during initial validation.
