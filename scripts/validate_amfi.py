@@ -1,3 +1,12 @@
+"""
+AMFI Validation Module
+
+Validates AMFI scheme data,
+checks scheme codes,
+and verifies data integrity before analysis.
+"""
+
+
 import pandas as pd
 
 master = pd.read_csv(

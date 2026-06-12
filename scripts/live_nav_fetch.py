@@ -1,3 +1,12 @@
+"""
+Live NAV Fetch Module
+
+Fetches latest NAV information
+from AMFI data sources.
+"""
+
+
+
 import requests
 import pandas as pd
 

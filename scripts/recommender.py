@@ -1,3 +1,10 @@
+"""
+Fund Recommendation Engine
+
+Recommends top mutual funds
+based on investor risk profile.
+"""
+
 import pandas as pd
 import os
 
@@ -24,8 +31,22 @@ scorecard['risk_grade'] = pd.cut(
     labels=['Low', 'Moderate', 'High']
 )
 
-# Select desired risk appetite
-risk = "High"      # Change to Low / Moderate / High
+print("\nSelect Risk Appetite")
+print("1. Low")
+print("2. Moderate")
+print("3. High")
+
+choice = input("Enter choice (1/2/3): ")
+
+if choice == "1":
+    risk = "Low"
+elif choice == "2":
+    risk = "Moderate"
+elif choice == "3":
+    risk = "High"
+else:
+    print("Invalid choice")
+    exit()
 
 # Generate recommendations
 recommendations = (

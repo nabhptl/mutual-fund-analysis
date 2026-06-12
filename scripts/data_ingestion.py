@@ -1,3 +1,12 @@
+"""
+Data Ingestion Module
+
+Loads raw mutual fund datasets,
+performs initial validation,
+and prepares data for analysis.
+"""
+
+
 import pandas as pd
 import os
 
@@ -13,13 +22,13 @@ for file in files:
     df = pd.read_csv(os.path.join(folder,file))
 
     print("\nShape:")
-    print(df.shape)
+    
 
     print("\nDtypes:")
-    print(df.dtypes)
+    
 
     print("\nHead:")
-    print(df.head())
+    
 
     print("\nMissing Values:")
     print(df.isnull().sum())
